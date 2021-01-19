@@ -1,0 +1,109 @@
+/* Modal */
+
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 29, 29, 0.3);
+}
+
+#modal__body {
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    top: -80px;
+    animation: sideIn ease 0.4s;
+}
+
+@keyframes sideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Buy Ticket Content */
+
+.buy-ticket__header .logo {
+    width: 900px;
+    height: 129px;
+    background-color: #009688;
+}
+
+.buy-ticket__header .logo p {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    line-height: 129px;
+    font-weight: 300;
+}
+
+.buy-ticket__content {
+    display: block;
+    width: 900px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 1px 16px;
+}
+
+.buy-ticket__content p {
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.buy-ticket__content i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.buy-ticket__content input {
+    width: 868px;
+    height: 40px;
+    padding: 8px;
+    outline: 1px;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.buy-ticket__content .buy-ticket-btn {
+    background-color: #009688;
+    width: 100%;
+}
+
+.buy-ticket__content .buy-ticket-btn i {
+    margin-left: 4px;
+    font-size: 18px;
+}
+
+.buy-ticket__footer {
+    display: flex;
+    background-color: #fff;
+    padding-top: 16px;
+    justify-content: space-around;
+}
+
+.buy-ticket__footer .close-btn {
+    background-color: #f44336;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-bottom: 16px;
+    border: none;
+    color: #fff;
+}
+
+.buy-ticket__footer p {
+    margin-bottom: 16px;
+    line-height: 37px;
+}
