@@ -436,12 +436,9 @@ html {
 }
 
 #clock {
-    font-size: 175px;
-    width: 900px;
-    margin: 200px;
+    font-size: 32px;
     text-align: center;
-    border: 2px solid black;
-    border-radius: 20px;
+    background-color: #fff;
 }
 
 #footer .copyright a:hover,
